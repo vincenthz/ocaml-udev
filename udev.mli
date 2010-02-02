@@ -24,7 +24,7 @@ external device_new_from_syspath : udev -> string -> udev_device
 external device_new_from_devnum : udev -> string -> devnum -> udev_device
   = "stub_udev_device_new_from_devnum"
 external device_get_parent : udev_device -> udev_device
-  = "stub_udev_get_parent"
+  = "stub_udev_device_get_parent"
 external device_get : udev_device -> device_info = "stub_udev_device_get"
 external device_get_properties : udev_device -> (string * string) list
   = "stub_udev_device_get_properties"
